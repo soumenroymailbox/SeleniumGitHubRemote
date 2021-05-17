@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Parallel test suite" parallel="tests" thread-count="1">
+	<parameter name="browser" value="Edge"/>
+	<test name="Microsoft Edge Browser Execution Test">
+		<classes>
+			<class name="testLibrary.LoginPageTest" />
+			<class name="testLibrary.HomePageTest"/>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
